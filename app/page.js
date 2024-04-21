@@ -30,11 +30,10 @@ export default async function Home() {
       <p className=" lg:text-4xl max-w-4xl text-center">¡Embárcate en una aventura sin igual con Montuno Birding!</p>
       <Count dateEnd={dateEnd} />
       <p className=" lg:text-4xl max-w-4xl text-center">Prepárate para descubrir un mundo de aves exóticas y paisajes impresionantes en Casanare </p>
-      <p className=" lg:text-4xl max-w-4xl text-center">Probando cambios</p>
     </main>
     <div className='grid grid-cols-4 gap-2 grid-flow-row-dense'>
       {files.filter(file => file.includes('.webp')).map((file, index) => {
-        return <img key={index} loading="lazy" src={`/images/${file}`} alt={file} className='h-full object-cover w-full' />
+        return <img key={index} loading="lazy" src={`/Images/${file}`} alt={file} className='h-full object-cover w-full' />
       })}
     </div>
   </>
