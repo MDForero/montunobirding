@@ -13,9 +13,24 @@ body {
   font-family: 'Goldman', sans-serif;
   color: rgb(var(--foreground-rgb));
 }
+.list-parachute{
+  list-style-image: url('/svg/parachute.svg') ;
+}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@layer base {
+  strong {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.bg-blob{
+  background: url('/blob_1.png');
+  background-size: cover;
+  background-position: center;
 }
