@@ -14,7 +14,7 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 .list-parachute{
-  list-style-image: url('/svg/parachute.svg') ;
+  list-style-image: url('/svg/parachute.svg') ; 
 }
 
 @layer utilities {
