@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Banner from "@/components/Banner";
 import BackTopButton from "@/components/BackTopButton";
+import Footer from "@/components/Footer";
 
 const goldman = Goldman({
   weight: '400',
@@ -20,11 +21,10 @@ export default function RootLayout({ children }) {
         <NavBar />
         <BackTopButton />
         <div className="max-w-screen-2xl relative mx-auto">
-          
-
           <Banner />
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );

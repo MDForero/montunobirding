@@ -16,6 +16,24 @@ body {
 .list-parachute{
   list-style-image: url('/svg/parachute.svg') ; 
 }
+.banner{
+  background: url('/Images/banners/4.jpg') no-repeat  center/cover;
+}
+
+.tiraSafari{
+  background: url('/Images/banners/tira-safari.png') repeat center center/cover;
+  background-repeat: repeat-x ;
+  animation: translateImage 20s infinite reverse ;
+}
+@keyframes translateImage {
+  0% {
+    background-position-x: -100%;
+  }
+  10% {
+    background-position-x: 200%;
+  }
+  
+}
 
 @layer utilities {
   .text-balance {
@@ -30,7 +48,6 @@ body {
 }
 
 .bg-blob{
-  background: url('/blob_1.png');
-  background-size: cover;
+  background: url('/blob_1.png') no-repeat;
   background-position: center;
 }
