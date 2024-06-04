@@ -4,7 +4,7 @@ export default async function Page() {
   const aboutUs = [
     {
       title: "Mision",
-      content: "Our mission is to provide the best possible experience for our customers and to make them feel at home.",
+      content: "Ser reconocidos a nivel nacional e internacional como un referente en turismo sostenible y accesible, destacando por la calidad de nuestros servicios, la pasión de nuestro equipo y nuestro compromiso con la preservación del entorno natural y cultural de los Llanos Orientales.",
       imgs: [
         {
           src: "/Images/Alcaravan_Venezolano.webp",
@@ -22,7 +22,7 @@ export default async function Page() {
     },
     {
       title: "Mision",
-      content: "Our mission is to provide the best possible experience for our customers and to make them feel at home.",
+      content: "Ser el operador turístico líder en ecoturismo en los Llanos Orientales, ofreciendo experiencias únicas e inolvidables que conecten a nuestros visitantes con la naturaleza, la cultura y la biodiversidad de la región, promoviendo la conservación y el desarrollo sostenible de las comunidades locales.",
       imgs: [
         {
           src: "/Images/Atrapamoscas_Cuidapuentes.webp",
