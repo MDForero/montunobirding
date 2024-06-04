@@ -1,15 +1,44 @@
+import { contactUs } from "@/app/data"
+import Gallery from "@/components/Gallery"
+
 export async function generateStaticParams() {
-    const alojamientos = await fetch('https://www.montunobirding.com/alojamientos.json', { cache: 'default' }).then(res => res.json()).then(data => data.alojamientos)
+    const alojamientos = await fetch('https://montunobirding.com/alojamientos.json', { cache: 'no-cache' }).then(res => res.json()).then(data => data.alojamientos)
     return alojamientos.map(alojamiento => ({ alojamiento: alojamiento.name.split(' ').join('-') }))
 }
 export default async function page({ params }) {
     const { alojamiento } = params
-    const data = await fetch('https://www.montunobirding.com/alojamientos.json', { cache: 'default' }).then(res => res.json()).then(data => data.alojamientos)
+    const data = await fetch('https://montunobirding.com/alojamientos.json', { cache: 'no-cache' }).then(res => res.json()).then(data => data.alojamientos)
     const hotel = data.find(alojamientos => alojamientos.name.split(' ').join('-') === alojamiento)
 
     return <>
-    <main className=" w-screen h-[700px] relative">
-        <img loading='lazy' src={hotel.img} alt={hotel.name} className="w-full h-full object-cover" />
-    </main>
+        <main className=" grid lg:grid-cols-2 py-12 ">
+            <div className="">
+                <Gallery data={hotel} />
+            </div>
+            <div className=" p-4 gap-5 text-balance flex flex-col h-full justify-center items-start">
+                <div>
+                    <h1 className="lg:text-6xl text-4xl font-bold text-green-700">{hotel.name}</h1>
+                    <p><strong>Descripcion</strong> {hotel.description}</p>
+                </div>
+                <div>
+                    <p className="font-semibold"><strong>Habitaciones:</strong> {hotel.rooms} </p>
+                    <p className="font-semibold"><strong>Capacidad:</strong> {hotel.ability} personas</p>
+                </div>
+                <div>
+                    <h3 className="text-xl font-bold"> El establecimiento cuenta con:</h3>
+                    <ul className=" flex flex-wrap gap-2 justify-around text-green-800">
+                        {hotel.performance.map((item, index) => <li key={index} className="flex ">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#15803d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            <strong>{item}</strong>
+                        </li>)}
+                    </ul>
+                </div>
+                <a href={`https://api.whatsapp.com/send?phone=${contactUs[0].value.split(' ').join('').slice(1)}&text=Hola,%20me%20gustaria%20saber%20mas%20sobre%20este%20alojamiento%20${hotel.name}`} className="bg-primary flex justify-center gap-2 items-center px-3 py-2 text-xl rounded-full text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-bold font-mono" target="_blank">
+                    <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="6"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z" fill="#ffffff"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z" fill="#ffffff"></path> </g></svg>
+                    Contactar
+                </a>
+            </div>
+
+        </main >
     </>
 }

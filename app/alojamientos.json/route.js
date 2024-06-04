@@ -5,93 +5,49 @@ export async function GET() {
         alojamientos: [
             {
                 id: 1,
-                name: 'Hotel 1',
-                address: 'Calle 1 # 1-1',
-                phone: '322 872 5091',
-                img:'/Images/alojamientos/casa_campestre_villa_real/2.webp',
+                name: "Alojamiento para 38 personas",
+                rooms: 14,
+                ability: 38,
+                description: "Amplio y cómodo alojamiento ideal para grupos y familias. Disfruta de piscina, habitaciones con baño privado y cocina equipada. ¡Tus mascotas también son bienvenidas!",
+                performance: [
+                    "Baño privado en cada habitación",
+                    "Piscina",
+                    "Amplio estacionamiento",
+                    "Cocina equipada con menaje",
+                    "Ideal para grupos y familias",
+                    "Admitimos mascotas"
+                ],
+                img: [
+                    '/Images/alojamientos/casa_campestre_villa_real/2.webp',
+                    '/Images/alojamientos/casa_campestre_villa_real/4.webp',
+                    '/Images/alojamientos/casa_campestre_villa_real/3.webp',
+                    '/Images/alojamientos/casa_campestre_villa_real/1.webp',
+                ],
                 mail: ''
             },
             {
                 id: 2,
-                name: 'Hotel 2',
-                address: 'Calle 2 # 2-2',
-                phone: '322 872 5091',
-                img:'/Images/alojamientos/casa_campestre_villa_real/2.webp',
+                name: "AnaGris Cottage",
+                rooms: 2,
+                ability: 6,
+                description: "Acogedor alojamiento perfecto para parejas y familias pequeñas. Relájate en el jacuzzi, disfruta del área de juegos para niños y cocina tus comidas favoritas.",
+                performance: [
+                    "Jacuzzi",
+                    "Área de juegos para niños",
+                    "Estacionamiento privado",
+                    "Cocina equipada con menaje",
+                    "Perfecto para parejas y familias pequeñas",
+                    "Admitimos mascotas"
+                ],
+                img: [
+                    '/Images/alojamientos/anagris/IMG-20240411-WA0041.webp',
+                    '/Images/alojamientos/anagris/IMG-20240411-WA0026.webp',
+                    '/Images/alojamientos/anagris/IMG-20240411-WA0035.webp',
+                    '/Images/alojamientos/anagris/IMG-20240411-WA0032.webp'
+                ],
                 mail: ''
             },
-            {
-                id: 3,
-                name: 'Hotel 3',
-                address: 'Calle 3 # 3-3',
-                phone: '322 872 5091',
-                img:'/Images/alojamientos/casa_campestre_villa_real/2.webp',
-                mail: ''
-            },
-            {
-                id: 4,
-                name: 'Hotel 4',
-                address: 'Calle 4 # 4-4',
-                phone: '322 872 5091',
-                img:'/Images/alojamientos/casa_campestre_villa_real/2.webp',
-                mail: ''
-            },
-            {
-                id: 5,
-                name: 'Hotel 5',
-                address: 'Calle 5 # 5-5',
-                phone: '322 872 5091',
-                img:'/Images/alojamientos/casa_campestre_villa_real/2.webp',
-                mail: ''
-            },
-            {
-                id: 6,
-                name: 'Hotel 6',
-                address: 'Calle 6 # 6-6',
-                phone: '322 872 5091',
-                img:'/Images/alojamientos/casa_campestre_villa_real/2.webp',
-                mail: ''
-            },
-            {
-                id: 7,
-                name: 'Hotel 7',
-                address: 'Calle 7 # 7-7',
-                phone: '322 872 5091',
-                img:'/Images/alojamientos/casa_campestre_villa_real/2.webp',
-                mail: ''
-            },
-            {
-                id: 8,
-                name: 'Hotel 8',
-                address: 'Calle 8 # 8-8',
-                phone: '322 872 5091',
-                img:'/Images/alojamientos/casa_campestre_villa_real/2.webp',
-                mail: ''
-            },
-            {
-                id: 9,
-                name: 'Hotel 9',
-                address: 'Calle 9 # 9-9',
-                phone: '322 872 5091',
-                img:'/Images/alojamientos/casa_campestre_villa_real/2.webp',
-                mail: ''
-            },
-            {
-                id: 10,
-                name: 'Hotel 10',
-                address: 'Calle 10 # 10-10',
-                phone: '322 872 5091',
-                img:'/Images/alojamientos/casa_campestre_villa_real/2.webp',
-                mail: ''
-            },
-            {
-                id: 11,
-                name: 'Hotel 11',
-                address: 'Calle 11 # 11-11',
-                phone: '322 872 5091',
-                img:'/Images/alojamientos/casa_campestre_villa_real/2.webp',
-                mail: ''
-            },
-            
+
         ]
     })
 }

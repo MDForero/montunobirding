@@ -1,17 +1,16 @@
 import Link from "next/link";
 
 export default async function Page() {
-  const alojamientos = await fetch('https://montunobirding.com/alojamientos.json', {cache:'default'}).then(res => res.json()).then(data => data.alojamientos)
+  const alojamientos = await fetch('https://montunobirding.com/alojamientos.json', {cache:'no-cache'}).then(res => res.json()).then(data => data.alojamientos).catch(err => console.log(err)) 
   return (
-    <div>
-      <h1>Page</h1>
-      <section className="md:flex justify-evenly flex-wrap gap-4 space-y-4 px-2 ">
+    <div className="md:p-16">
+      <section className="flex justify-evenly flex-wrap gap-4 space-y-4 px-2 ">
         {alojamientos?.map(alojamiento =>
-          <div key={alojamiento.name} className="flex max-w-6xl overflow-hidden bg-white rounded-lg shadow-lg">
-            <div className="w-1/3 ">
-              <img loading='lazy' className="object-cover w-full h-full" src={alojamiento.img} />
+          <div key={alojamiento.name} className="flex max-w-6xl w-full overflow-hidden bg-white rounded-lg shadow-lg">
+            <div className="w-full md:max-w-lg">
+              <img loading='lazy' className=" w-full object-cover max-h-80 h-full " src={alojamiento.img[0]} />
             </div>
-            <div className="w-2/3 p-4 flex flex-col items-end">
+            <div className="w-full md:w-2/3 p-4 flex flex-col items-end">
               <h1 className="text-2xl font-bold text-gray-900">
                 {alojamiento.name}
               </h1>
