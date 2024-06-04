@@ -5,11 +5,11 @@ const AdviceBanner = ({ data }) => {
   const [show, setShow] = useState(true)
   return (
     <section className={show ? 'fixed top-0 left-0 right-0 bottom-0 h-screen flex justify-center items-center  z-50' : 'hidden'}>
-      <div className=' relative  lg:w-4/5 m-auto  grid grid-rows-4 h-full lg:h-4/5 border-4 border-green-700'>
+      <div className=' relative  lg:w-4/5 w-full m-auto  grid grid-rows-4 h-full lg:h-4/5 border-4 border-green-700'>
         <img src={data?.imagen} className='w-full h-full absolute object-cover top-0 left-0 right-0 bottom-0 -z-10' />
-        <div className=' relative row-span-4 flex  items-center flex-col bg-white/30'>
+        <div className=' relative row-span-4 flex  items-center flex-col '>
           <button onClick={() => setShow(false)} className=' absolute top-2 right-2 rounded-full bg-white md:bg-green-700 w-10 h-10 text-2xl'>X</button>
-          <h1 className=' bg-blob p-4 lg:text-5xl font-semibold  max-w-xl text-center '>{data?.titulo.split(' ').map(item=> !['Ave', 'Libertad!'].includes(item) ? <>{item} </> : <strong className=''>{item} </strong>)}</h1>
+          <h1 className=' bg-blob p-4 lg:text-5xl font-semibold  max-w-xl text-center  flex'>{data?.titulo}</h1>
         </div>
         <footer className='grid lg:grid-cols-2 text-sm lg:text-base tracking-tighter leading-tight row-start-5 bg-white p-5'>
           <ul >{
