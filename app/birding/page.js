@@ -3,12 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function Page() {
-  const data = await fetch('http:127.0.0.1:3000/aves.json', { cache: 'default' }).then(res => res.json());
+  const data = await fetch('https://www.montunobirding.com/aves.json', { cache: 'default' }).then(res => res.json());
 
   return (
     <div>
-      <section className="flex flex-wrap justify-around items-center space-y-8">
-        <article></article>
+      <section className="flex flex-wrap justify-around items-stretch gap-8 ">
         {data.map(bird => <Bird bird={bird}  key={bird.english_name}/>)}
       </section>
     </div>

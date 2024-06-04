@@ -1,13 +1,13 @@
 import Image from "next/image";
 
 export async function generateStaticParams() {
-    const data = await fetch('http:127.0.0.1:3000/aves.json', { cache: 'default' }).then(res => res.json());
+    const data = await fetch('https://www.montunobirding.com/aves.json', { cache: 'default' }).then(res => res.json());
     return data.map(birds => ({ bird: birds.scientific_name.split(' ').join('_') }));
 }
 
 export default async function Page({ params }) {
     const { bird } = params;
-    const data = await fetch('http:127.0.0.1:3000/aves.json', { cache: 'default' }).then(res => res.json());
+    const data = await fetch('https://www.montunobirding.com/aves.json', { cache: 'default' }).then(res => res.json());
     const birdData = data.find(birds => birds.scientific_name.split(' ').join('_') === bird);
 
     return (
