@@ -1,7 +1,13 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Alojamientos en Monterrey Casanare | Montuno Birding",
+  keywords: ['Alojamientos', 'Monterrey Casanare', 'Llanos Orientales', 'Colombia', 'Hospedaje', 'Turismo', 'Naturaleza', 'Aventura'],
+  description: "Descubre los mejores alojamientos en Monterrey Casanare, los Llanos Orientales de Colombia. Encuentra opciones para todos los gustos y presupuestos, rodeados de naturaleza y aventura."
+}
+
 export default async function Page() {
-  const alojamientos = await fetch('https://montunobirding.com/alojamientos.json', {cache:'no-cache'}).then(res => res.json()).then(data => data.alojamientos).catch(err => console.log(err)) 
+  const alojamientos = await fetch('https://montunobirding.com/alojamientos.json', {cache:'reload'}).then(res => res.json()).then(data => data.alojamientos).catch(err => console.log(err)) 
   return (
     <div className="md:p-16">
       <section className="flex justify-evenly flex-wrap gap-4 space-y-4 px-2 ">

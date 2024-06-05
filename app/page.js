@@ -5,6 +5,11 @@ import Image from "next/image";
 import AdviceBanner from "@/components/AdviceBanner";
 import BannerDiv from "@/components/BannerDiv";
 
+export const metadata = {
+  title: 'Montuno Birding | Ecoturismo en los Llanos Orientales de Colombia',
+  keywords: ["Ecoturismo", "Llanos Orientales", 'Avistamiento de aves', 'Parapente a motor', 'Senderismo', 'Safari llanero', 'Turismo sostenible', 'Aviturismo', 'Colombia', 'Monterrey Casanare', 'Operador turístico', "Guía turístico"],
+  description: "Descubre la magia de los Llanos Orientales, en Monterrey Casanare, con MONTUNO, tu operador turístico y guía experto en ecoturismo. Ofrecemos experiencias únicas de avistamiento de aves, parapente, senderismo y safaris. ¡Vive aventuras inolvidables en contacto con la naturaleza!"
+}
 
 export default async function Home() {
   const data = await fetch('http://www.montunobirding.com/flyers.json', { cache: 'reload' }).then(res => res.json()).catch(err => console.log(err))
@@ -12,7 +17,8 @@ export default async function Home() {
   console.log(data, banners)
 
   return (<>
-    <AdviceBanner data={data[1]} />
+    {/* {data && <AdviceBanner data={data[1]} />} */}
+    
     <section className="space-y-32">
       <main className="w-full  flex flex-col justify-center items-center relative bg-white/80 -z-10 ">
         <Image src='/Images/principal.jpg' width={0} height={0} className="w-full h-[400px] md:h-full object-cover" />
@@ -66,7 +72,7 @@ export default async function Home() {
 
           <div className="lg:w-3/5">
             <picture className="">
-              <img className="object-cover w-full mx-auto maw-w-44 rounded-lg overflow-hidden" src="/Images/Cabeza_De_Hueso_2.webp" alt="Cabeza de hueso" />
+              <img loading='lazy' className="object-cover w-full mx-auto maw-w-44 rounded-lg overflow-hidden" src="/Images/Cabeza_De_Hueso_2.webp" alt="Cabeza de hueso" />
             </picture>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
     return NextResponse.json([
         {
-            imgs: [
+            img: [
                 '/Images/Jabiru1.webp',
                 '/Images/Jabiru2.webp',
             ],
@@ -12,7 +12,7 @@ export async function GET() {
             "scientific_name": "Jabiru mycteria"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Cabeza_De_Hueso_1.webp',
                 '/Images/Cabeza_De_Hueso_2.webp',
             ],
@@ -21,7 +21,7 @@ export async function GET() {
             "scientific_name": "Mycteria americana"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Espatula_Rosada.webp',
             ],
             "spanish_name": "Espátula Rosada",
@@ -29,7 +29,7 @@ export async function GET() {
             "scientific_name": "Platalea ajaja"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Chenchena.webp',
             ],
             "spanish_name": "Chenchena",
@@ -37,7 +37,7 @@ export async function GET() {
             "scientific_name": "Opisthocomus hoazin"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Trogon_Coliblanco_1.webp',
                 '/Images/Trogon_Coliblanco_2.webp',
             ],
@@ -46,7 +46,7 @@ export async function GET() {
             "scientific_name": "Trogon viridis"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Barranquero_Coronado.webp',
             ],
             "spanish_name": "Barranquero Coronado",
@@ -54,7 +54,7 @@ export async function GET() {
             "scientific_name": "Momotus momota"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Tucan_Silbador.webp',
             ],
             "spanish_name": "Tucán Silbador",
@@ -62,7 +62,7 @@ export async function GET() {
             "scientific_name": "Ramphastos tucanus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Pichi_Bandirojo_1.webp',
                 '/Images/Pichi_Bandirojo_2.webp',
             ],
@@ -71,7 +71,7 @@ export async function GET() {
             "scientific_name": "Pteroglossus castanotis"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Carpintero_Marcial.webp',
             ],
             "spanish_name": "Carpintero Marcial",
@@ -79,7 +79,7 @@ export async function GET() {
             "scientific_name": "Campephilus melanoleucos"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Carpintero_Real.webp',
             ],
             "spanish_name": "Carpintero Real",
@@ -87,7 +87,7 @@ export async function GET() {
             "scientific_name": "Dryocopus lineatus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Carpintero_Habado_1.webp',
                 '/Images/Carpintero_Habado_2.webp',
                 '/Images/Carpintero_Habado_3.webp',
@@ -97,7 +97,7 @@ export async function GET() {
             "scientific_name": "Melanerpes rubricapillus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Garza_Silbadora.webp',
             ],
             "spanish_name": "Garza Silbadora",
@@ -105,7 +105,7 @@ export async function GET() {
             "scientific_name": "Syrigma sibilatrix"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Pellar_Playero.webp',
             ],
             "spanish_name": "Pellar Playero",
@@ -113,7 +113,7 @@ export async function GET() {
             "scientific_name": "Hoploxypterus cayanus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Garza_Real.webp',
             ],
             "spanish_name": "Garza Real",
@@ -121,7 +121,7 @@ export async function GET() {
             "scientific_name": "Ardea alba"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Garza_Azul_1.webp',
                 '/Images/Garza_Azul_2.webp',
                 '/Images/Garza_Azul_3.webp',
@@ -131,7 +131,7 @@ export async function GET() {
             "scientific_name": "Egretta caerulea"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Corocora.webp',
             ],
             "spanish_name": "Corocora",
@@ -139,7 +139,7 @@ export async function GET() {
             "scientific_name": "Eudocimus ruber"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Garzon_Azul.webp',
             ],
             "spanish_name": "Garzón Azul",
@@ -147,7 +147,7 @@ export async function GET() {
             "scientific_name": "Ardea cocoi"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Bandurria_Aliblanca.webp',
             ],
             "spanish_name": "Bandurria Aliblanca",
@@ -155,7 +155,7 @@ export async function GET() {
             "scientific_name": "Theristicus caudatus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Coquito.webp',
             ],
             "spanish_name": "Coquito ",
@@ -163,7 +163,7 @@ export async function GET() {
             "scientific_name": "Phimosus infuscatus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Ibis_Verde.webp',
             ],
             "spanish_name": "Ibis Verde",
@@ -171,7 +171,7 @@ export async function GET() {
             "scientific_name": "Mesembrinibis cayennensis"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Pisingo.webp',
             ],
             "spanish_name": "Pisingo",
@@ -179,7 +179,7 @@ export async function GET() {
             "scientific_name": "Dendrocygna autumnalis"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Mochuelo_Conejo.webp',
             ],
             "spanish_name": "Mochuelo Conejo",
@@ -187,7 +187,7 @@ export async function GET() {
             "scientific_name": "Athene cunicularia"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Aruco.webp',
             ],
             "spanish_name": "Aruco",
@@ -195,7 +195,7 @@ export async function GET() {
             "scientific_name": "Anhima cornuta"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Pellar_Teru_Teru.webp',
             ],
             "spanish_name": "Pellar Teru teru",
@@ -203,7 +203,7 @@ export async function GET() {
             "scientific_name": "Vanellus chilensis"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Garza_Del_Sol.webp',
             ],
             "spanish_name": "Garza del Sol",
@@ -211,7 +211,7 @@ export async function GET() {
             "scientific_name": "Eurypyga helias"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Garza_Patiamarilla.webp',
             ],
             "spanish_name": "Garza Patiamarilla",
@@ -219,7 +219,7 @@ export async function GET() {
             "scientific_name": "Egretta thula"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Perdiz_Chilindra.webp',
             ],
             "spanish_name": "Perdiz Chilindra",
@@ -227,7 +227,7 @@ export async function GET() {
             "scientific_name": "Colinus cristatus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Alcaravan_Venezolano.webp',
             ],
             "spanish_name": "Alcaraván Venezolano",
@@ -235,7 +235,7 @@ export async function GET() {
             "scientific_name": "Hesperoburhinus bistriatus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Polla_Azul.webp',
             ],
             "spanish_name": "Polla Azul",
@@ -243,7 +243,7 @@ export async function GET() {
             "scientific_name": "Porphyriops melanops"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Siriri_Tijereton.webp',
             ],
             "spanish_name": "Sirirí Tijeretón",
@@ -251,7 +251,7 @@ export async function GET() {
             "scientific_name": "Tyrannus savana"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Guacharaca_Variable.webp',
             ],
             "spanish_name": "Guacharaca Variable",
@@ -259,7 +259,7 @@ export async function GET() {
             "scientific_name": "Ortalis guttata"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Pigua_2.webp',
                 '/Images/Pigua.webp',
             ],
@@ -268,7 +268,7 @@ export async function GET() {
             "scientific_name": "Daptrius chimachima"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Gavilan_Caminero_1.webp',
                 '/Images/Gavilan_Caminero_2.webp',
                 '/Images/Gavilan_Caminero_3.webp',
@@ -278,7 +278,7 @@ export async function GET() {
             "scientific_name": "Rupornis magnirostris"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Gavilan_Sabanero_1.webp',
                 '/Images/Gavilan_Sabanero_2.webp',
                 '/Images/Gavilan_Sabanero_3.webp',
@@ -288,7 +288,7 @@ export async function GET() {
             "scientific_name": "Buteogallus meridionalis"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Caracara_Quebrantahuesos.webp',
             ],
             "spanish_name": "Caracara Qebrantahuesos",
@@ -296,7 +296,7 @@ export async function GET() {
             "scientific_name": "Caracara plancus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Cangrejero_Grande_1.webp',
                 '/Images/Cangrejero_Grande_2.webp',
             ],
@@ -305,7 +305,7 @@ export async function GET() {
             "scientific_name": "Buteogallus urubitinga"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Cernicola_Americano.webp',
             ],
             "spanish_name": "Cernícalo Americano",
@@ -313,7 +313,7 @@ export async function GET() {
             "scientific_name": "Falco sparverius"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Perico_Carisucio.webp',
             ],
             "spanish_name": "Perico Carisucio",
@@ -321,7 +321,7 @@ export async function GET() {
             "scientific_name": "Eupsittula pertinax"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Periquito_De_Anteojos.webp',
             ],
             "spanish_name": "Periquito de Anteojos",
@@ -329,7 +329,7 @@ export async function GET() {
             "scientific_name": "Forpus conspicillatus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Lora_Cabeciamarilla.webp',
             ],
             "spanish_name": "Lora Cabeciamarilla",
@@ -337,7 +337,7 @@ export async function GET() {
             "scientific_name": "Amazona ochrocephala"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Garrapatero_Piquiliso.webp',
             ],
             "spanish_name": "Garrapatero Piquiliso",
@@ -345,7 +345,7 @@ export async function GET() {
             "scientific_name": "Crotophaga ani"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Guala_Sabanera.webp',
             ],
             "spanish_name": "Guala Sabanera",
@@ -353,7 +353,7 @@ export async function GET() {
             "scientific_name": "Cathartes burrovianus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Guala_Cabecirroja.webp',
             ],
             "spanish_name": "Guala Cabecirroja",
@@ -361,7 +361,7 @@ export async function GET() {
             "scientific_name": "Cathartes aura"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Paloma_Morada.webp',
             ],
             "spanish_name": "Paloma Morada",
@@ -369,7 +369,7 @@ export async function GET() {
             "scientific_name": "Patagioenas cayennensis"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Chirlobirlo.webp',
             ],
             "spanish_name": "Chirlobirlo",
@@ -377,7 +377,7 @@ export async function GET() {
             "scientific_name": "Sturnella magna"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Eufonia_Gorgipurpura.webp',
             ],
             "spanish_name": "Eufonia Gorgipúrpura",
@@ -385,7 +385,7 @@ export async function GET() {
             "scientific_name": "Euphonia chlorotica"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Jacamar_Lugubre_1.webp',
                 '/Images/Jacamar_Lugubre_2.webp',
             ],
@@ -394,7 +394,7 @@ export async function GET() {
             "scientific_name": "Brachygalba lugubris"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Cardenal_Pantanero.webp',
             ],
             "spanish_name": "Cardenal Pantanero",
@@ -402,7 +402,7 @@ export async function GET() {
             "scientific_name": "Paroaria nigrogenis"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Monjita_Pantanera.webp',
             ],
             "spanish_name": "Monjita Pantanera",
@@ -410,7 +410,7 @@ export async function GET() {
             "scientific_name": "Arundinicola leucocephala"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Tangara_Triguera_1.webp',
                 '/Images/Tangara_Triguera_2.webp',
             ],
@@ -419,7 +419,7 @@ export async function GET() {
             "scientific_name": "Stilpnia cayana"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Atrapamoscas_Cuidapuentes.webp',
             ],
             "spanish_name": "Atrapamoscas Cuidapuentes",
@@ -427,7 +427,7 @@ export async function GET() {
             "scientific_name": "Sayornis nigricans"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Canario_Sabanero.webp',
             ],
             "spanish_name": "Canario Sabanero",
@@ -435,7 +435,7 @@ export async function GET() {
             "scientific_name": "Sicalis luteola"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Arrendajo_Culiamarillo.webp',
             ],
             "spanish_name": "Arrendajo Culiamarillo",
@@ -443,7 +443,7 @@ export async function GET() {
             "scientific_name": "Cacicus cela"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Parlotero_Malcasado.webp',
             ],
             "spanish_name": "Parlotero Malcasado",
@@ -451,7 +451,7 @@ export async function GET() {
             "scientific_name": "Tachyphonus rufus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Atrapamoscas_Veteado.webp',
             ],
             "spanish_name": "Atrapamoscas Veteado",
@@ -459,7 +459,7 @@ export async function GET() {
             "scientific_name": "Empidonomus varius"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Sinsonte_Comun_1.webp',
                 '/Images/Sinsonte_Comun_2.webp',
             ],
@@ -468,7 +468,7 @@ export async function GET() {
             "scientific_name": "Mimus gilvus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Tordo_Llanero.webp',
             ],
             "spanish_name": "Tordo Llanero",
@@ -476,7 +476,7 @@ export async function GET() {
             "scientific_name": "Quiscalus lugubris"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Espiguero_Ladrillo.webp',
             ],
             "spanish_name": "Espiguero Ladrillo",
@@ -484,7 +484,7 @@ export async function GET() {
             "scientific_name": "Sporophila minuta"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Tortolita_Escamada.webp',
             ],
             "spanish_name": "Tortolita Escamada",
@@ -492,7 +492,7 @@ export async function GET() {
             "scientific_name": "Columbina squammata"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Toche_Negro.webp',
             ],
             "spanish_name": "Toche Negro",
@@ -500,7 +500,7 @@ export async function GET() {
             "scientific_name": "Ramphocelus carbo"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Mielero_Comun.webp',
             ],
             "spanish_name": "Mielero Común",
@@ -508,7 +508,7 @@ export async function GET() {
             "scientific_name": "Coereba flaveola"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Turpial_Lagunero.webp',
             ],
             "spanish_name": "Turpial Lagunero",
@@ -516,7 +516,7 @@ export async function GET() {
             "scientific_name": "Gymnomystax mexicanus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Canario_Coronado_2.webp',
                 '/Images/Canario_Coronado.webp',
             ],
@@ -525,7 +525,7 @@ export async function GET() {
             "scientific_name": "Sicalis flaveola"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Carriqui_Violaceo.webp',
             ],
             "spanish_name": "Carriquí Violáceo",
@@ -533,7 +533,7 @@ export async function GET() {
             "scientific_name": "Cyanocorax violaceus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Eufonia_Gorgiamarilla.webp',
             ],
             "spanish_name": "Eufonia Gorgiamarilla",
@@ -541,7 +541,7 @@ export async function GET() {
             "scientific_name": "Euphonia laniirostris"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Atrapamoscas_Garrochero.webp',
             ],
             "spanish_name": "Atrapamoscas Garrochero",
@@ -549,7 +549,7 @@ export async function GET() {
             "scientific_name": "Myiarchus ferox"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Siriri_Comun.webp',
             ],
             "spanish_name": "Sirirí Común",
@@ -557,7 +557,7 @@ export async function GET() {
             "scientific_name": "Tyrannus melancholicus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Martin_Pescador_Grande.webp',
             ],
             "spanish_name": "Martín pescador Grande",
@@ -565,7 +565,7 @@ export async function GET() {
             "scientific_name": "Megaceryle  torquata"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Soldadito.webp',
             ],
             "spanish_name": "Soldadito",
@@ -573,7 +573,7 @@ export async function GET() {
             "scientific_name": "Leistes militaris"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Azulejo_Comun.webp',
             ],
             "spanish_name": "Azulejo Común",
@@ -581,7 +581,7 @@ export async function GET() {
             "scientific_name": "Thraupis episcopus"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Biemparado_Grande.webp',
             ],
             "spanish_name": "Biemparado Grande",
@@ -589,7 +589,7 @@ export async function GET() {
             "scientific_name": "Nyctibius grandis"
         },
         {
-            imgs: [
+            img: [
                 '/Images/Bujio.webp',
             ],
             "spanish_name": "Bujío",

@@ -13,26 +13,30 @@ body {
   font-family: 'Goldman', sans-serif;
   color: rgb(var(--foreground-rgb));
 }
-.list-parachute{
-  list-style-image: url('/svg/parachute.svg') ; 
-}
-.banner{
-  background: url('/Images/banners/4.jpg') no-repeat  center/cover;
+
+.list-parachute {
+  list-style-image: url('/svg/parachute.svg');
 }
 
-.tiraSafari{
-  background: url('/Images/banners/tira-safari.png') repeat center center/cover;
-  background-repeat: repeat-x ;
-  animation: translateImage 20s infinite reverse ;
+.banner {
+  background: url('/Images/banners/4.jpg') no-repeat center/cover;
 }
+
+.tiraSafari {
+  background: url('/Images/banners/tira-safari.png') repeat center center/cover;
+  background-repeat: repeat-x;
+  animation: translateImage 20s infinite reverse;
+}
+
 @keyframes translateImage {
   0% {
     background-position-x: -100%;
   }
+
   10% {
     background-position-x: 200%;
   }
-  
+
 }
 
 @layer utilities {
@@ -47,7 +51,37 @@ body {
   }
 }
 
-.bg-blob{
+.bg-blob {
   background: url('/blob_1.png') no-repeat;
   background-position: center;
+}
+
+.btn-wp::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.375rem;
+}
+
+.btn-wp:hover::after {
+  
+  background: #103928;
+  animation: circle .5s forwards;
+}
+@keyframes circle {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 9rem;
+    height: 3rem;
+  }
+  
 }

@@ -1,5 +1,12 @@
 import Package from "@/components/Package";
 
+export const metadata = {
+  title: "Senderismo en el Piedemonte Llanero | Monterrey Casanare",
+  keywords: ['Senderismo', 'Piedemonte Llanero', 'Monterrey Casanare', 'Naturaleza', 'Aventura', 'Caminatas', 'Belleza Natural'],
+  description: "Descubre la magia natural del Piedemonte Llanero con nuestras rutas de senderismo. Explora paisajes únicos, disfruta de amaneceres espectaculares y conecta con la naturaleza en un entorno tranquilo y relajante."
+
+}
+
 export default function Page() {
   return (
     <div className="max-w-7xl mx-auto space-y-24 py-12">
@@ -10,11 +17,11 @@ export default function Page() {
           <h1>Senderismo para Todos</h1>
           <p>Nuestros senderos están diseñados para que todos puedan disfrutar de la belleza natural de los llanos. No importa tu edad o condición física, tenemos una ruta perfecta para ti.</p>
         </div>
-        <div class="grid grid-cols-2 w-5/6 gap-2 place-items-center mx-auto">
-          <img src="/Images/senderismo/IMG-20240602-WA0012.webp" class="w-full h-full object-cover rounded-lg" alt="Tree" />
+        <div className="grid grid-cols-2 w-5/6 gap-2 place-items-center mx-auto">
+          <img loading='lazy' src="/Images/senderismo/IMG-20240602-WA0012.webp" className="w-full h-full object-cover rounded-lg" alt="Tree" />
           <div className="">
-            <img src="/Images/senderismo/IMG-20240602-WA0005.webp" class="rounded-lg w-full" alt="Tree" />
-            <img src="/Images/senderismo/IMG-20240602-WA0004.webp" class="rounded-lg w-full" alt="Tree" />
+            <img loading='lazy' src="/Images/senderismo/IMG-20240602-WA0005.webp" className="rounded-lg w-full" alt="Tree" />
+            <img loading='lazy' src="/Images/senderismo/IMG-20240602-WA0004.webp" className="rounded-lg w-full" alt="Tree" />
           </div>
         </div>
       </section>
@@ -41,7 +48,7 @@ export default function Page() {
             </li>
           </ul>
         </div>
-        <img src="/Images/senderismo/Imagen de WhatsApp 2024-06-01 a las 11.50.20_8cae8801.webp" alt="Senderismo" className="object-cover w-full rounded-md" />
+        <img loading='lazy' src="/Images/senderismo/Imagen de WhatsApp 2024-06-01 a las 11.50.20_8cae8801.webp" alt="Senderismo" className="object-cover w-full rounded-md" />
       </section>
       <section className="flex justify-center md:justify-between  max-w-7xl gap-4 flex-wrap ">
         {packages.map((item, index) => <Package key={index} data={item} />)}

@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { contactUs } from "../data";
 
+export const metadata = {
+  title: "Contáctanos | Montuno Birding",
+  keywords: ['Contacto', 'Montuno Birding', 'Llanos Orientales', 'Colombia', 'Reservas', 'Preguntas', 'Información', 'Tours'],
+  description: "¿Tienes alguna pregunta o deseas reservar un tour? ¡Contáctanos! Estamos aquí para ayudarte y responder a todas tus inquietudes."
+}
+
 export default function Page() {
   return (
     <div className="space-y-32 mt-24">

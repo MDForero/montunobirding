@@ -14,7 +14,7 @@ const Team = async () => {
                 {team.map(teamMate => <div key={teamMate.name} className="p-4 border">
                     <div className="mb-4 text-center opacity-90">
                         <a href="#" className="relative block">
-                            <img alt="profil" src={teamMate.img} className="mx-auto object-cover rounded-full h-40 w-40 " />
+                            <img loading='lazy' alt="profil" src={teamMate.img} className="mx-auto object-cover rounded-full h-40 w-40 " />
                         </a>
                     </div>
                     <div className="text-center">

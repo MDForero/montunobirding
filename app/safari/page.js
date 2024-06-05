@@ -1,25 +1,31 @@
 import Package from "@/components/Package"
 
+export const metadata = {
+    title: "Safari Llanero en los Llanos Orientales de Colombia | Monterrey Casanare",
+    keywords: ['Safari llanero', 'Llanos Orientales', 'Monterrey Casanare', 'Fauna silvestre', 'Cabalgatas', 'Naturaleza', 'Aventura', 'Cultura llanera'],
+    description: "Vive la emoción de un safari llanero en los Llanos Orientales, Monterrey Casanare. Observa la fauna silvestre en su hábitat natural, disfruta de cabalgatas y sumérgete en la cultura y tradiciones llaneras."
+}
+
 export default function page() {
     return (
         <div className="space-y-24 py-12">
-            <section class="bg-white  overflow-hidden relative lg:flex lg:items-center max-w-7xl">
-                <div class="max-w-xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-                    <h2 class="text-3xl font-extrabold text-primary  sm:text-4xl">
-                        <span class="block">
+            <section className="bg-white  overflow-hidden relative lg:flex lg:items-center max-w-7xl">
+                <div className="max-w-xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
+                    <h2 className="text-3xl font-extrabold text-primary  sm:text-4xl">
+                        <span className="block">
                             ¡Atrévete a vivir una emocionante aventura con nuestro Safari Llanero en los imponentes llanos del Casanare!
                         </span>
                     </h2>
-                    <p class="text-md mt-4 text-black">
+                    <p className="text-md mt-4 text-black">
                         Descubre una experiencia única de observación de fauna silvestre, rodeada de paisajes cautivadores, gastronomía auténtica y una cultura vibrante.
                     </p>
 
                 </div>
-                <div class="grid grid-cols-2 w-5/6 gap-2 place-items-center mx-auto">
-                    <img src="/Images/safari/17.webp" class="w-full h-full  bject-cover rounded-lg" alt="Tree" />
+                <div className="grid grid-cols-2 w-5/6 gap-2 place-items-center mx-auto">
+                    <img loading='lazy' src="/Images/safari/17.webp" className="w-full h-full  bject-cover rounded-lg" alt="Tree" />
                     <div className="">
-                        <img src="/Images/safari/14.webp" class="rounded-lg w-full" alt="Tree" />
-                        <img src="/Images/safari/7.webp" class="rounded-lg w-full" alt="Tree" />
+                        <img loading='lazy' src="/Images/safari/14.webp" className="rounded-lg w-full" alt="Tree" />
+                        <img loading='lazy' src="/Images/safari/7.webp" className="rounded-lg w-full" alt="Tree" />
                     </div>
                 </div>
             </section>
@@ -34,8 +40,8 @@ export default function page() {
                 <div className="tiraSafari w-full h-96">
                 </div>
             </section>
-            <section className="flex gap-2 md:justify-between items-stretch justify-center  ">
-                {packages.map((data, index) =><Package key={index} data={data} />)}
+            <section className="flex flex-wrap gap-2 md:justify-around items-stretch justify-center  ">
+                {packages.map((data, index) => <Package key={index} data={data} />)}
             </section>
         </div>
     )
@@ -85,3 +91,4 @@ export const packages = [
         ]
     }
 ]
+

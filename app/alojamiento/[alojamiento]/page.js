@@ -2,12 +2,12 @@ import { contactUs } from "@/app/data"
 import Gallery from "@/components/Gallery"
 
 export async function generateStaticParams() {
-    const alojamientos = await fetch('https://montunobirding.com/alojamientos.json', { cache: 'no-cache' }).then(res => res.json()).then(data => data.alojamientos)
+    const alojamientos = await fetch('https://montunobirding.com/alojamientos.json', { cache: 'reload' }).then(res => res.json()).then(data => data.alojamientos)
     return alojamientos.map(alojamiento => ({ alojamiento: alojamiento.name.split(' ').join('-') }))
 }
 export default async function page({ params }) {
     const { alojamiento } = params
-    const data = await fetch('https://montunobirding.com/alojamientos.json', { cache: 'no-cache' }).then(res => res.json()).then(data => data.alojamientos)
+    const data = await fetch('https://montunobirding.com/alojamientos.json', { cache: 'reload' }).then(res => res.json()).then(data => data.alojamientos)
     const hotel = data.find(alojamientos => alojamientos.name.split(' ').join('-') === alojamiento)
 
     return <>

@@ -5,7 +5,7 @@ import React from 'react'
 const Bird = ({ bird }) => {
     return (<article key={bird.english_name} className=" max-w-96 h-max content-stretch">
         <h2 className="text-center font-bold text-2xl text-primary mb-3">{bird.spanish_name}</h2>
-        <Image key={bird.spanish_name} src={bird.imgs[0]} alt={bird.spanish_name + '|' + bird.english_name + '|' + bird.scientific_name} width={0} height={0} className="flex rounded-full object-cover w-72 h-72 mx-auto border-4 shadow-2xl border-primary" />
+        <Image key={bird.spanish_name} src={bird.img[0]} alt={bird.spanish_name + '|' + bird.english_name + '|' + bird.scientific_name} width={0} height={0} className="flex rounded-full object-cover w-72 h-72 mx-auto border-4 shadow-2xl border-primary" />
         <div className="">
             <ul className="w-72 mx-auto">
                 <li><span className="font-bold"> Nombre común: </span><strong className="font-normal">{bird.spanish_name}</strong></li>

@@ -2,7 +2,7 @@ import React from 'react'
 import Bird from './Bird'
 
 const BirdsInsight = async () => {
-    const data = await fetch('https://www.montunobirding.com/aves.json', { cache: 'default' }).then(res => res.json()).catch(err => console.log(err))
+    const data = await fetch('https://www.montunobirding.com/birds.json', { cache: 'default' }).then(res => res.json()).catch(err => console.log(err))
     const birds = data.slice(0, 3)
     return (
         <section>

@@ -1,5 +1,11 @@
 import Team from "@/components/Team";
 
+export const metadata = {
+  title: "Nosotros | Montuno Birding",
+  keywords: ['Nosotros', 'Montuno Birding', 'Llanos Orientales', 'Colombia', 'Equipo', 'Historia', 'Mision', 'Vision'],
+  description: "Conoce a Montuno Birding, el operador turístico líder en ecoturismo en los Llanos Orientales de Colombia. Descubre nuestra historia, misión, visión y al equipo que hace posible que vivas experiencias únicas e inolvidables en la naturaleza."
+}
+
 export default async function Page() {
   const aboutUs = [
     {
@@ -54,10 +60,10 @@ export default async function Page() {
             </p>
           </div>
           <div className="grid grid-cols-2 gap-8 p-8 lg:p-24 w-11/12">
-            <img src={item.imgs[0].src} className="rounded-lg w-full h-full object-cover" alt={item.imgs[0].alt} />
+            <img loading='lazy' src={item.imgs[0].src} className="rounded-lg w-full h-full object-cover" alt={item.imgs[0].alt} />
             <div>
-              <img src={item.imgs[1].src} className="mb-8 rounded-lg  w-full" alt={item.imgs[1].alt} />
-              <img src={item.imgs[2].src} className="rounded-lg w-full" alt={item.imgs[2].alt} />
+              <img loading='lazy' src={item.imgs[1].src} className="mb-8 rounded-lg  w-full" alt={item.imgs[1].alt} />
+              <img loading='lazy' src={item.imgs[2].src} className="rounded-lg w-full" alt={item.imgs[2].alt} />
             </div>
           </div>
         </div>)}
