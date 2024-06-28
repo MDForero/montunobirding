@@ -1,9 +1,9 @@
 import BirdsInsight from "@/components/BirdsInsight";
-import Count from "@/components/Count";
 import Team from "@/components/Team";
 import Image from "next/image";
 import AdviceBanner from "@/components/AdviceBanner";
 import BannerDiv from "@/components/BannerDiv";
+
 
 export const metadata = {
   title: 'Montuno Birding | Ecoturismo en los Llanos Orientales de Colombia',
@@ -17,7 +17,6 @@ export default async function Home() {
   console.log(data, banners)
 
   return (<>
-    {/* {data && <AdviceBanner data={data[1]} />} */}
     
     <section className="space-y-32">
       <main className="w-full  flex flex-col justify-center items-center relative bg-white/80 -z-10 ">

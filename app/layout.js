@@ -1,4 +1,4 @@
-import { Goldman } from "next/font/google";
+import { Titillium_Web } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Banner from "@/components/Banner";
@@ -6,10 +6,11 @@ import BackTopButton from "@/components/BackTopButton";
 import Footer from "@/components/Footer";
 import BtnCtaWp from "@/components/BtnCtaWp";
 
-const goldman = Goldman({
-  weight: '400',
+const goldman = Titillium_Web({
+  weight: '600',
   subsets: ["latin"]
 });
+
 
 export const metadata = {
   icons: {

@@ -15,7 +15,7 @@ const NavBar = () => {
     return (
         <nav className='max-w-screen-2xl flex justify-between items-center mx-auto w-full px-3'>
             <Image src='/svg/logo-no-background.svg' width={250} height={100} />
-            <ul className={'hidden lg:flex mx-auto lg:gap-3 xl:gap-5  lg:text-lg xl:text-2xl'}>
+            <ul className={'hidden lg:flex mx-auto lg:gap-3 xl:gap-5  lg:text-lg xl:text-xl'}>
                 {links.map(link => <li key={link.name}>
                     <Link className={pathname === link.url ? "lg:text-primary text-white border-b-2 lg:border-b-primary border-b-white " : ""} href={link.url}>{link.name}</Link>
                 </li>)}

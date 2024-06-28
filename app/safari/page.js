@@ -40,55 +40,8 @@ export default function page() {
                 <div className="tiraSafari w-full h-96">
                 </div>
             </section>
-            <section className="flex flex-wrap gap-2 md:justify-around items-stretch justify-center  ">
-                {packages.map((data, index) => <Package key={index} data={data} />)}
-            </section>
+           
         </div>
     )
 }
-
-export const packages = [
-    {
-        title: "Descubriendo los Llanos",
-        price: "$450.000 COP",
-        duration: "3 días / 2 noches",
-        description: "Sumérgete en la esencia de los Llanos Orientales con este paquete que combina la emoción del safari con la tranquilidad de la naturaleza. Recorre la sabana en busca de fauna exótica, disfruta de cabalgatas al atardecer y relájate en nuestro alojamiento acogedor.",
-        performance: [
-            "Dos safaris guiados para observar aves, mamíferos y reptiles.",
-            "Una cabalgata guiada para explorar los paisajes llaneros.",
-            "Dos noches de alojamiento en nuestro cómodo lodge.",
-            "Todas las comidas incluidas, con platos típicos de la región.",
-            "Transporte desde y hacia el aeropuerto de Yopal."
-        ]
-    },
-    {
-        title: "Aventura Llanera Extrema",
-        price: "$700.000 COP",
-        duration: "5 días / 4 noches",
-        description: "Para los amantes de la adrenalina y la naturaleza, este paquete ofrece una experiencia completa en los Llanos. Además de los safaris y cabalgatas, podrás disfrutar de actividades como kayak en los ríos, senderismo por senderos naturales y fogatas nocturnas bajo las estrellas.",
-        performance: [
-            "Tres safaris guiados para observar la fauna llanera.",
-            "Dos cabalgatas guiadas para explorar diferentes zonas de la sabana.",
-            "Una excursión en kayak por el río Ariporo.",
-            "Una caminata guiada por senderos naturales.",
-            "Cuatro noches de alojamiento en nuestro lodge con todas las comodidades.",
-            "Todas las comidas incluidas, con opciones vegetarianas y veganas disponibles.",
-            "Transporte desde y hacia el aeropuerto de Yopal."
-        ]
-    },
-    {
-        title: "Safari Fotográfico en los Llanos",
-        price: "$900.000 COP",
-        duration: "7 días / 6 noches",
-        description: "Diseñado para fotógrafos y amantes de la naturaleza, este paquete te brinda la oportunidad de capturar imágenes únicas de la fauna y flora de los Llanos. Acompañado por un guía experto en fotografía de naturaleza, aprenderás técnicas y trucos para obtener las mejores fotos.",
-        performance: [
-            "Cuatro safaris guiados enfocados en la fotografía de fauna.",
-            "Tres cabalgatas guiadas para acceder a lugares remotos y obtener perspectivas únicas.",
-            "Sesiones de revisión y edición de fotos con el guía experto.",
-            "Seis noches de alojamiento en nuestro lodge con todas las comodidades.",
-            "Todas las comidas incluidas, con opciones vegetarianas y veganas disponibles.",
-            "Transporte desde y hacia el aeropuerto de Yopal."
-        ]
-    }
-]
 
