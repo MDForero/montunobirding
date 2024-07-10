@@ -3,22 +3,9 @@ import { useState } from "react"
 
 const MansoryGallery = ({ array }) => {
     const [show, setShow] = useState(false)
-    let arrayControl = []
-    const arraysAire = []
-    array.forEach((element, index) => {
-        if (index % 3 === 0) {
-            arrayControl = []
-            arraysAire.push(arrayControl)
-            arrayControl.push(element)
-        } else {
-            arrayControl.push(element)
-        }
-    })
-    console.log(arraysAire)
-    return (<div className={(show ? '' : ' h-[150dvh] overflow-hidden ') + " relative grid grid-cols-2 md:grid-cols-4 gap-2"}>
-        {arraysAire.map((array, index) => <div key={index} className="grid gap-4">
-            {array.map((img, index) => <img key={index} loading="lazy" className={(index % 2 === 0 ? 'max-h-96' : 'max-h-52') + " h-full max-w-full w-full rounded-lg object-cover"} src={'/Images/' + img} alt={img} />)}
-        </div>)}
+
+    return (<div className={(show ? '' : ' h-[125dvh] overflow-hidden ') + " columns-2 lg:columns-3 space-y-4"}>
+        {array.map((img) => <img key={img} loading="lazy" className={" max-w-full w-full rounded-lg object-cover"} src={'/Images/' + img} alt={img} />)}
         <div className="absolute bottom-0 left-0 right-0 z-50 ">
             <button onClick={() => setShow(!show)} className="mx-auto w-fit  bg-primary flex justify-center items-center rounded-lg px-2">
                 <div className='w-10 h-10 flex justify-center items-center mx-auto'>

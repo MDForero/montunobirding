@@ -37,7 +37,7 @@ export default function page() {
                     <li className="max-w-xl "><strong>Gastronomía Llanera:</strong> Deléitate con los sabores auténticos de la cocina llanera, preparada con ingredientes frescos y locales.</li>
                     <li className="max-w-xl "><strong>Cultura Vibrante:</strong> Conoce las tradiciones y costumbres de los llaneros, su música, sus bailes y su forma de vida.</li>
                 </ul>
-                <div className="tiraSafari w-full h-96">
+                <div className="animationTira bg-tira-safari w-full h-96 bg-[url('/tira-safari.webp')] bg-cover bg-center">
                 </div>
             </section>
            

@@ -3,6 +3,7 @@ import MansoryGallery from "@/components/MansoryGallery";
 import Image from "next/image";
 import Link from "next/link";
 import { aire, contactUs } from "../data";
+import ServicesHero from "@/components/ServicesHero";
 
 export const metadata = {
   title: "Avistamiento de Aves en los Llanos Orientales de Colombia | Monterrey Casanare",
@@ -10,9 +11,34 @@ export const metadata = {
   description: "Explora la diversidad de aves de Colombia en los Llanos Orientales, Monterrey Casanare, con nuestros tours guiados por expertos. ¡Vive la emoción de observar aves en su hábitat natural y captura momentos inolvidables con tu cámara!"
 }
 
+export const serviciosAire = [
+  {
+    title: "Avistamiento de Aves",
+    description: "Explora la riqueza ornitológica de Colombia en los Llanos Orientales, Monterrey Casanare. Acompañado por guías expertos, descubrirás aves endémicas y migratorias en su hábitat natural.",
+    images: 'bg-tira-avistamiento',
+    link: "/birding"
+  },
+  {
+    title: "Parapente a Motor",
+    description: "Siente la adrenalina de volar sobre paisajes impresionantes en Monterrey Casanare. Nuestros aliados certificados te guiarán en esta emocionante experiencia llena de libertad.",
+    images: 'bg-tira-paramotor',
+    link: "/parapente"
+  },
+  {
+    title: "Talleres y Charlas sobre Aves",
+    description: "Aprende sobre la diversidad de aves de Colombia y la importancia de su conservación. Nuestros talleres, diseñados para todas las edades y niveles de experiencia, te brindarán los conocimientos necesarios para disfrutar al máximo de la observación de aves.",
+    images: [
+      '/Images/birding/Birding_1.webp',
+      '/Images/birding/Birding_7.webp',
+      '/Images/birding/Birding_8.webp',
+    ],
+    link: "/birding"
+  }
+]
+
 export default async function Page() {
   return (
-    <section className="flex flex-wrap justify-around items-stretch gap-8 space-y-52 my-28">
+    <section className="flex flex-wrap justify-around items-stretch gap-8 space-y-20 my-28">
       <section className="space-y-6">
         <div >
           <h1 className="lg:text-4xl text-2xl text-center text-pretty"> Vive Montuno desde el Aire:</h1>
@@ -43,6 +69,8 @@ export default async function Page() {
           </div>
         </div>
       </section>
+
+      {serviciosAire.map((servicio, index) => <ServicesHero key={index} data={servicio} />)}
       <section className="space-y-8">
         <h1 className="lg:text-3xl text-center"> <strong>Alas y Paisajes: Memorias de Avistamientos y Vuelos con Montuno</strong></h1>
         <MansoryGallery array={aire} />
