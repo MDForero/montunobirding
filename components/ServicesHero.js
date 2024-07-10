@@ -16,7 +16,7 @@ export default function ServicesHero({ data }) {
                     <div className="flex flex-col gap-2 min-[400px]:flex-row">
                         <Link
                             href="#"
-                            className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-green-50  shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                            className="inline-flex h-10 items-center justify-center text-pretty text-center rounded-md bg-primary px-8 text-sm font-medium text-green-50  shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                             prefetch={false}
                         >
                             {data?.cta || <div className="flex gap-2"> <svg width="24" height="24" viewBox="0 0 360 362" fill="none" xmlns="http://www.w3.org/2000/svg">

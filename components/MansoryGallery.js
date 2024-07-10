@@ -1,11 +1,13 @@
 'use client'
+import { usePathname } from "next/navigation"
 import { useState } from "react"
 
 const MansoryGallery = ({ array }) => {
     const [show, setShow] = useState(false)
+    const path = usePathname()
 
     return (<div className={(show ? '' : ' h-[125dvh] overflow-hidden ') + " columns-2 lg:columns-3 space-y-4"}>
-        {array.map((img) => <img key={img} loading="lazy" className={" max-w-full w-full rounded-lg object-cover"} src={'/Images/' + img} alt={img} />)}
+        {array.map((img) => <img key={img} loading="lazy" className={" max-w-full w-full rounded-lg object-cover"} src={'/Images/'+ path + img} alt={img} />)}
         <div className="absolute bottom-0 left-0 right-0 z-50 ">
             <button onClick={() => setShow(!show)} className="mx-auto w-fit  bg-primary flex justify-center items-center rounded-lg px-2">
                 <div className='w-10 h-10 flex justify-center items-center mx-auto'>
